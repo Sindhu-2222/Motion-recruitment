@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying to AWS EC2...'
                 sshagent(['EC2-SSH-CREDENTIALS']) {
-                    sh 'ssh ec2-user54.90.72.59 "bash /home/ubuntu/deploy.sh"'
+                    sh 'ssh ec2-user54.90.72.59 "bash /home/ec2-user/deploy.sh"'
                 }
             }
         }
